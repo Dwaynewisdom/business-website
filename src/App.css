@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.homepage {
+  background: url('home-background.jpg') no-repeat center center;
+  margin-top:20;
+  overflow: hidden;
+  
+}
+
+.homepage:: ::-webkit-scrollbar{
+  display: none;
+}
+
+
+.company-name-highlight{
+  color: #06a71b;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-family: 'Arial', sans-serif;
+}
+.company-slogan{
+  font-size: 50px;
+  color: white;
+  margin-top: 200px;
+  padding-left: 0; 
+  width: 100%;
+  overflow: hidden;
+}
+.We {
+  font-weight: bold;
+  font-size: 100px;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 0.85;
+}
+
+.build {
+  color: #06a71b;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  line-height: 0.85;
+}
+
+.slogan-highlight {
+  display: block;
+  -webkit-text-stroke: 1.5px #f5f2ed;
+  color: transparent;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(60px, 15vw, 250px);
+  line-height: 0.85;
+  padding-left: 5vw;
+}
+
+.slogan-highlights {
+  display: block;
+  -webkit-text-stroke: 1.5px #ffffff;
+  color: green;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(60px, 15vw, 250px); 
+  line-height: 0.85;
+  padding-left: 10vw; 
+}
+
+.company-description {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  padding-left: 10px;
+  max-width: 500px; 
+  width: 90%;
+}
+
+.start-a-project{
+  margin-top: 30px;
+  padding-left: 10px;
+  padding:5px;  
+
+}
+.start-project{
+  background-color: #06a71b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  
+}
+
+.start-project:hover {
+  background-color: #82d477;
+  color:#000000;
+  opacity: 0.8;
+}
+
+.marquee-wrap {
+  margin: 100px auto;
+  width: 100%;
+  display: flex;
+  overflow: hidden; 
+  white-space: nowrap;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; 
+  gap: 2em; 
+  padding-right: 2em; 
+  animation: scroll 20s linear infinite; 
+}
+
+.card {
+
+  white-space: nowrap; 
+  font-size: 50px;
+  color: white;
+  padding: 0 20px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
